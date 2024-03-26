@@ -1,0 +1,275 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+
+    color: #222222e1;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content>li {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul.content>li:hover {
+    cursor: pointer;
+    color: #22222292;
+}
+
+.translator_icon:hover {
+    cursor: pointer;
+}
+
+.translator_icon {
+    height: 32px;
+}
+
+.down_arrow {
+    height: 12px;
+    width: 12px;
+    padding: 0 5px;
+}
+
+nav .logo {
+    height: 71px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+
+
+body {
+    margin: 12px 75px 12px 55px;
+    max-width: 1350px;
+    font-family: "Segoe UI";
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 45px;
+    position: absolute;
+    margin: auto;
+    padding: 55px 5.6vw 90px 5.6vw;
+}
+
+div.download_box {
+    width: 300px;
+    height: 160px;
+    padding: 25px 12px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.download1_box {
+    width: 300px;
+    height: 160px;
+    padding: 25px 12px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.download_buttons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 39px 0 0 0;
+    margin: auto;
+    color: #ffffff;
+    gap: 12px;
+}
+
+.download1_buttons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 28px 0 11px 0;
+    margin: auto;
+    color: #ffffff;
+    gap: 12px;
+}
+
+.bit-32 {
+    background-color: #00b6d1;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    align-self: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.bit-32:hover{
+    cursor: pointer;
+    background-color: #02a9c2;
+}
+
+.bit-64 {
+    background-color: rgb(70, 186, 70);
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    align-self: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.bit-64:hover{
+    cursor:pointer;
+    background-color: rgba(78, 192, 78, 0.865);
+}
+
+.content_box {
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.content1_box {
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0 0 0;
+}
+
+.content_box_detail {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    padding: 7px 0 0 0;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Download_detail1 {
+    margin: 77px auto 0 auto;
+    font-size: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.Download_detail1>img {
+    display: flex;
+    align-content: end;
+}
+
+.Download_detail2 {
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 75vw;
+    margin: 48px auto 0 auto;
+}
+
+.main_download_button {
+    margin: 42px auto 10px auto;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #00b6d1;
+    padding: 15px 18px 15px 18px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main_download_button:hover {
+    background-color: #02a9c2;
+    cursor: pointer;
+}
+
+.copy_right_detail {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0 0 45px;
+}
+
+.copy_right_detail>.logo_image {
+    display: inline-flex;
+}
+
+.copy_right_detail>.big_text {
+    font-size: 25px;
+    padding-top: 5px;
+}
+
+.copy_right_detail>.small_text {
+    padding-top: 14px;
+}
+
+@media only screen and (max-width: 990px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 12px 5.49vw 12px 4.026vw;
+    }
+
+    .boxes {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 90px 0 0 0;
+    }
+
+    .download_box {
+        width: 91vw !important;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 12px 5.49vw 12px 4.026vw;
+    }
+
+    .boxes {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 90px 48px 0 40px;
+    }
+
+    .download_box {
+        width: 91vw !important;
+        height: 200px;
+    }
+}
